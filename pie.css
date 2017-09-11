@@ -1,0 +1,26 @@
+
+
+.pie {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background-color: #36f;
+}
+
+.sp {
+	background-image: linear-gradient(to right, transparent 50%, #ccc 0)
+}
+
+.sp::before {
+	content: '';
+	display: block;
+	margin-left: 50%;
+	height: 100%;
+	border-radius: 0 100% 100% 0 / 50%;
+	background-color: #ccc;
+	transform-origin: left;
+	transform: rotate(96deg);
+}
+
+
+

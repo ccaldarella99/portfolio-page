@@ -1,0 +1,176 @@
+html{
+	font-family: "Century Gothic", Arial, Sans-Serif;
+	font-size: 16px;
+	background-color: #fff;
+}
+
+
+.hide-menu {
+	transform: translateX(0);
+	transition: all 500ms ease-in-out;
+}
+
+.show-menu {
+	transform: translateX(245px);
+	transition: all 500ms ease-in-out;
+}
+
+
+.menuName {
+	margin-top:20px;
+	text-align: center;
+	font-weight:bold;
+}
+
+.menu {
+	z-index:10;
+	transition: all 500ms ease-in-out;
+	display: inline-block;
+	top: -5px;
+	position: fixed;
+	width: 300px;
+	height:150%;
+	left: -250px;
+}
+
+.menu-col {
+	padding: 15px;
+	text-align:right;
+}
+
+
+.menuContent {
+	background-color: #66f;
+	height: 100%;
+}
+
+.menuButton {
+	margin-top: 10px;
+	cursor: pointer;
+	background:#fff;
+	border-radius:10px;
+}
+
+.hamburger {
+	width: 36px;
+	height: 6px;
+	background-color: #333;
+	border-radius: 5px;
+	margin: 5px auto;
+}
+
+
+.all-content {
+	max-width: 988px;
+	text-align: center;
+	margin: 1.2em auto 0 auto;
+}
+
+.footer {
+	max-width:988px;
+	text-align: center;
+	margin: 10px auto;
+	position:relative;
+	height:80px;
+	font-weight:bold;
+	background-color: #444;
+}
+
+.icons {
+	max-height: 3em;
+	text-align: center;
+	padding: 0.3125em 0.625em;
+}
+
+.links {
+	padding: 10px;
+	text-align: center;
+	margin:10px auto;
+}
+
+.body-content {
+}
+
+.content-header {
+	font-size:1.8em;
+	font-weight:bold;
+	width:150px;
+}
+
+.content-left {
+	text-align:left;
+	padding: 15px;
+}
+
+.move-right {
+	transform: translateX(205px);
+	transition: all 500ms ease-in-out;
+}
+
+.content-aboutme, .content-portfolio {
+	height:300px;
+}
+
+.content-contactme {
+	height:200px;
+}
+
+.move-left {
+	transform: translateX(0);
+	transition: all 500ms ease-in-out;
+}
+
+.top-row {
+	background-color: #acf;
+}
+
+.name {
+	font-size: 2.5em;
+	font-weight:bold;
+	padding-top:10px;
+}
+.tiny-name {
+	font-size: 1.4em;
+}
+
+
+@media screen and (min-width: 491px){
+	.mobile {
+		display:none;
+	}
+}
+
+@media screen and (min-width: 401px){
+	.tiny-name {
+		display:none;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.name {
+		display:none;
+	}
+
+}
+
+
+@media screen and (max-width: 490px) {
+	.name {
+		font-size: 1.4em;
+	}
+	.big {
+		display:none;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.all-content {
+		max-width: 500px;
+		margin: 1.2em auto 0 auto;
+	}
+
+	.name {
+		font-size: 2em;
+	}
+	
+}
