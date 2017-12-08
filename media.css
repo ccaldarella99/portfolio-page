@@ -1,0 +1,48 @@
+
+
+
+@media screen and (max-width:620px) {
+	#my-name {
+		font-size: 2em;
+	}
+
+	.email , .phone{
+		padding: 0.35em 0;
+		display: block;
+		font-size: 1em;
+	}
+
+	.address {
+		font-size: 1em;
+	}
+	
+	.pie {
+	width: 60px;
+	height: 60px;
+	}
+
+	.dates, .location, .position{
+		font-size: 0.8em;
+	}
+	.dates {
+		width: 28%;
+	}
+	
+	.location {
+		width: 72%;
+	}
+	
+	.links {
+		font-size: 0.68em;
+	}
+
+	.icons {
+		max-height: 1.8em;
+		padding: 0 0 0.15em 0.2em;
+	}
+
+
+	
+}
+
+
