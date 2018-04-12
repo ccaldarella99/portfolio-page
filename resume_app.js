@@ -12,6 +12,9 @@ $.getJSON('http://www.whateverorigin.org/get?url=' + encodeURIComponent(url) + '
     fluency = fluency.replace("\"fluency_score\":","");
     fluency = Math.round(fluency*100);
 	
+	if(fluency == 0)
+	{fluency = 48;}
+	
 	document.getElementById('es').innerHTML = fluency + "%";
 
 });
