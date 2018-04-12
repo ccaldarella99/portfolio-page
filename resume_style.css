@@ -144,6 +144,7 @@ html{
 	-o-transform: skew(-40deg);
 	transform: skew(-40deg);
 	text-align: left;
+	z-index: 0;
 }
 
 
@@ -227,6 +228,38 @@ html{
 
 .left-align {
 	text-align: left;
+}
+
+.tooltipimg img {
+	width: 0;
+	border-radius: 15px;
+	opacity: 0;
+}
+
+.tooltipimg {
+	-webkit-transform: skew(40deg);
+	-moz-transform: skew(40deg);
+	-o-transform: skew(40deg);
+	transform: skew(40deg);
+}
+
+.bar .tooltipimg {
+	opacity: 0;
+	transition: 0.5s;
+	position: absolute;
+	left: 400px;
+	z-index: -1;
+}
+
+.bar:hover .tooltipimg img {
+	width: 675px;
+	opacity: 1;
+	z-index: 10;
+}
+.bar:hover .tooltipimg {
+	width: 675px;
+	opacity: 1;
+	z-index: 10;
 }
 
 
