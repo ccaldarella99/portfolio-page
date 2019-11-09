@@ -25,43 +25,9 @@ $('#yourDiv').followTo(250);
 
 
 function topFunction(speedInSeconds) {
-	'use strict';
-	var numberOfPixelsFromTop = document.body.scrollTop;
-	
-	//get time-stamp
-	var timeOffset = 1000;
-	var moveSeconds = Math.ceil((speedInSeconds*timeOffset)/numberOfPixelsFromTop);
-	if(moveSeconds==0) {moveSeconds==1;}
-	var movePixels = Math.ceil(numberOfPixelsFromTop/(speedInSeconds*timeOffset));
-	if(movePixels==0) {movePixels==1;}
-	var timeStamp = Math.floor(Date.now());
-	var timeIncrement = timeStamp + moveSeconds;
-	var timeNow = Math.floor(Date.now());
-	//alert ("Time Stamp: " + timeStamp + "\nTime Now: " + timeNow + "\nTime Stop: " + stopTime);
-	while(document.body.scrollTop > 0) {
-		timeNow = Math.floor(Date.now());
-		if(timeNow > timeIncrement){
-			timeIncrement += moveSeconds;
-			window.scrollBy(0, (-1 * movePixels));
-			//document.body.scrollTop -= movePixels;
-			//document.documentElement.scrollTop = document.body.scrollTop;
-		}
-		//console.log(window.pageYOffset);
-	}
-	
-	
-	//calculate speed by time to complete animation
-	//calculate intervals to move (number of) pixels by
-	//while loop until predicted time is met
-	//----->>>>Perhaps a for loop that uses calculations to move up - recursion???
-	//if statement calculating the increments
-	//when mod==0, scroll up by interval of pixels  <<<--- mod is too accurate, look to see if equals or greater than incrmeent of time
-	//keep the last two lines below to make up any inaccuracies
-	//seeing issue where it just takes the time with no action and moves to the top once time runs out.
-	
-	//document.body.scrollTop = 0;
-	//document.documentElement.scrollTop = 0;
+	document.body.scrollTop = 0;
 }
+
 
 function moveMenu() {
 	if(menuIsOpen == false)
